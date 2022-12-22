@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Image Editor</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+        </style> 
+    <!-- font awesome and box icon links -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+    <script src="https://kit.fontawesome.com/aba6cc6039.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <div class="container disable">    
+        <h2>Image Editor</h2>
+        <div class="wrapper">
+            <div class="editor-panel">
+                <div class="filter">
+                    <label class="tittle">Filters</label>
+                    <div class="options">
+                        <button id="brightness" class="active">Brightness</button>
+                        <button id="saturation">Saturation</button>
+                        <button id="inversion">Inversion</button>
+                        <button id="grayscale">Grayscale</button>
+                    </div>
+                    <div class="slider">
+                        <div class="filter-info">
+                            <p class="name">Brightness</p>
+                            <p class="value">100%</p>
+                        </div>
+                        <input type="range" value="100" min="0" max="200">
+                    </div>
+                </div>
+                <div class="rotate">
+                    <br>
+                    <label class="tittle"> Rotate& Flip</label>
+                    <div class="options">
+                        <button id="left"><i class="fa-solid fa-rotate-left"></i></button>
+                        <button id="right"><i class="fa-solid fa-rotate-right"></i></button>
+                        <button id="vertical"><i class="bx bx-reflect-vertical"></i></button>
+                        <button id="horizontal"><i class="bx bx-reflect-horizontal"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="preview-image">
+                <img src="placeholde-image.jpg" alt="Image Placeholder">
+            </div>
+            
+        </div>
+        <div class="controls">
+            <button class="reset-filter">Reset Filter</button>
+            <div class="row">
+                <input type="file" class="file-input" accept="image/*" hidden>
+                <button class="choose-image">Choose Image</button>
+                <button class="save-image">Save Image</button>
+            </div>
+    </div>
+    <img src="moon.png" alt="Image Placeholder" id="mode">
+
+</div>
+<script src="script.js"></script>
+    
+</body>
+</html>
